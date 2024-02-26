@@ -6,8 +6,8 @@ Feature: Citizenship with Apache POI
     And Click on login Button
     And Navigate to Citizenship page
 
-#  Scenario: Create a new Citizenship
-#    And Create a citizenship with Apache POI
+  Scenario: Create a new Citizenship
+    And Create a citizenship with Apache POI
 
-    Scenario: Delete a new Citizenship
-      And Delete a citizenship with Apache POI
+#    Scenario: Delete a new Citizenship
+#      And Delete a citizenship with Apache POI
