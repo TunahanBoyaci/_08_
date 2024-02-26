@@ -42,7 +42,7 @@ public class _03_ {
     public void iWriteIntoExcel() {
         try {
             MyMethods2.myWait(3);
-            List<WebElement> listOfNames = ParameterDriver.getDriver().findElements(By.xpath("//tbody[@role=\"rowgroup\"]//td[@class=\"mat-mdc-cell mdc-data-table__cell cdk-cell cdk-column-name mat-column-name ng-tns-c3483967859-61 ng-star-inserted\"]"));
+            List<WebElement> listOfNames = ParameterDriver.getDriver().findElements(By.xpath("//tbody[@role=\"rowgroup\"]//td[@class=\"mat-mdc-cell mdc-data-table__cell cdk-cell cdk-column-name mat-column-name ng-tns-c3483967859-42 ng-star-inserted\"]"));
             SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss");
             String dateTime = dateFormat.format(new Date());
             fileName = "WriteModelNumbers" + dateTime + ".xlsx";
