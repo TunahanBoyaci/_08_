@@ -16,7 +16,7 @@ import java.util.List;
 
 public class ExcelUtilities {
 
-    public static List<List<String>> getDataFromExcel(String path,String sheetName){
+    public static List<List<String>> getDataFromExcel(String path, String sheetName) {
         FileInputStream fileInputStream = null;
         Workbook workbook = null;
 
@@ -32,8 +32,9 @@ public class ExcelUtilities {
 
         for (int i = 0; i < sheet.getPhysicalNumberOfRows(); i++) {
             List<String> innerList = new ArrayList<>();
-            for (int j = 0; j < sheet.getPhysicalNumberOfRows(); j++) {
-                Cell cell = sheet.getRow(i).getCell(j);
+            Row row = sheet.getRow(i);
+            for (int j = 0; j < row.getPhysicalNumberOfCells(); j++) {  // Corrected this line
+                Cell cell = row.getCell(j);
                 innerList.add(cell.toString());
             }
             returnList.add(innerList);
