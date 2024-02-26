@@ -72,11 +72,11 @@ public class _03_ {
 
         try {
             MyMethods2.myWait(3);
-            List<List<String>> citizenshipData = ExcelUtilities.getDataFromExcel("C:/ProgramData/Jenkins/.jenkins/workspace/_08_/src/test/java/ApachePOI/recources/" + fileName, "Sheet1");
+            List<List<String>> countries = ExcelUtilities.getDataFromExcel("C:/ProgramData/Jenkins/.jenkins/workspace/_08_/src/test/java/ApachePOI/recources/" + fileName, "Sheet1");
 
             System.out.println("C:/ProgramData/Jenkins/.jenkins/workspace/_08_/src/test/java/ApachePOI/recources/" + fileName);
 
-            for (List<String> data : citizenshipData) {
+            for (List<String> data : countries) {
                 dialogContent.sendKeysMethod(dialogContent.nameInboxSearchInboxSearch1, data.get(0));
                 dialogContent.clickMethod(dialogContent.searchButton);
                 MyMethods2.myWait(1);
