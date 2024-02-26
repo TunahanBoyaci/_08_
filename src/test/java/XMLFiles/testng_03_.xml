@@ -7,7 +7,7 @@
 <!--        <parameter name="browser" value="chrome"></parameter>-->
 
         <classes>
-            <class name="Runners._03_Runner"></class>
+            <class name="ApachePOI._03_"></class>
         </classes>
     </test>
 
