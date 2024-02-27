@@ -2,12 +2,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
 
-    <test name="_02_ XML">
+    <test name="_03_Combinedd">
 
 <!--        <parameter name="browser" value="chrome"></parameter>-->
 
         <classes>
-            <class name="ApachePOI._03_"></class>
+            <class name="ApachePOI._03_Combined"></class>
         </classes>
     </test>
 
