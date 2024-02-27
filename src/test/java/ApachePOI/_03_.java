@@ -21,7 +21,7 @@ import java.util.List;
 
 public class _03_ {
     DialogContent dialogContent = new DialogContent();
-    static String fileName = "";
+    String fileName = "";
 
     @Test
     public void loginAndNavigate() {
