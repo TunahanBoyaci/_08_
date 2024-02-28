@@ -20,7 +20,7 @@ import java.util.List;
 
 public class _03_Combined {
     DialogContent dialogContent = new DialogContent();
-    String fileName = "";
+    static String fileName = "";
 
     @Test
     public void loginAndNavigate() {
